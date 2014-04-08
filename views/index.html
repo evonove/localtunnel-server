@@ -59,10 +59,15 @@
 
       <p>Now use the command line app to request a tunnel to your local server.</p>
 
-      <div class="highlight"><pre><span class="nv">$ </span>lt --port 8000
-your url is: https://gqgh.localtunnel.me</pre></div>
+      <div class="highlight"><pre><span class="nv">$ </span>lt --host http://evonove.me --port 8000
+your url is: http://fghj.evonove.me</pre></div>
 
       <p>You can now share <em>https://gqgh.localtunnel.me</em> with anyone. As long as your local instance of <strong>lt</strong> is running, this url will remain active. Any requests to that url will be routed to your service on port 8000.</p>
+
+      <p>If you want to specify the subdomain instead of letting localtunnel generate a random string, use the <b>--subdomain</b> option.</p>
+
+      <div class="highlight"><pre><span class="nv">$ </span>lt --host http://evonove.me --port 8000 --subdomain myadd
+your url is: http://myadd.evonove.me</pre></div>
 
       <p>When you start and stop your tunnel, you will see it reflected in the active tunnel count below.</p>
 
